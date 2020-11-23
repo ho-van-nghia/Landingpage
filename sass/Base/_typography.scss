@@ -4,12 +4,12 @@ body{
 	font-weight: 400;
 	line-height: 1.5;
 	color: $color-grey;
-	padding: 30px;
+	padding: 3rem;
 }
 .header-text{
 	color: $color-white;
 	text-transform: uppercase;
-	margin-bottom: 60px;
+	margin-bottom: 6rem;
 	/*animation-name: animationtest;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -18,14 +18,33 @@ body{
     &--main{
         display: block;
         font-size: 6.2rem;
-        letter-spacing: 15px;
+        letter-spacing: 1.5rem;
         animation: moveInLeft 1s ease-out;
     }
     &--sub{
         display: block;
         font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 18px;
+        letter-spacing: 1.8rem;
         animation: moveInRight 1s ease-out;
+    }
+}
+.heading-secondery{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: 2rem;
+    cursor: pointer;
+
+    transition: all 0.2s;
+
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    color: transparent; //Bắt buộc phải tồn tại vì bg-clip kh đk ổ trợ trên chorme,  fifoxld
+    -webkit-background-clip: text; //Cắt bg
+
+    &:hover{
+        transform: skewY(5deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
 }
