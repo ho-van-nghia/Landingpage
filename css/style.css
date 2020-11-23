@@ -163,7 +163,8 @@ body {
     text-decoration: none;
     padding: .3rem;
     display: inline-block;
-    border-bottom: 0.1rem solid #5a73fc; }
+    border-bottom: 0.1rem solid #5a73fc;
+    color: #5a73fc; }
   .btn-text:hover {
     background-color: #5a73fc;
     color: #ffffff;
@@ -234,9 +235,14 @@ body {
   position: relative;
   background-size: cover;
   clip-path: ellipse(66% 34% at 51% 49%);
-  height: 95vh;
+  height: 100vh;
   padding: 18rem 0rem;
-  margin-top: -14rem; }
+  margin-top: -18rem; }
+
+.section-courser {
+  background-color: #f7f7f7;
+  padding: 15rem 0rem 5rem;
+  margin-top: -20rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -280,4 +286,39 @@ body {
   padding: 2.5rem 2.5rem 5rem 2.5rem;
   text-align: center;
   border-radius: 5rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all .2s; }
+  .skill-box__icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #8e9efc, #1c3eff);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .skill-box:hover {
+    cursor: pointer;
+    transform: translateY(-1.3rem) scale(1.03); }
+
+.card {
+  perspective: 150rem;
+  height: 45rem;
+  position: relative; }
+  .card__side {
+    height: 45rem;
+    font-size: 2rem;
+    color: #ffffff;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--next {
+      background-color: orangered; }
+    .card__side--previous {
+      background-color: green;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--next {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--previous {
+    transform: rotateY(0); }

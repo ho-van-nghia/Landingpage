@@ -1,0 +1,29 @@
+.card{
+    perspective: 150rem;
+    height: 45rem;
+    position: relative;
+    &__side{
+        height: 45rem;
+        font-size: 2rem;
+        color: $color-white;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        &--next{
+            background-color: orangered;
+        }
+        &--previous{
+            background-color: green;
+            transform: rotateY(180deg);
+        }
+    }
+    &:hover &__side--next{
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--previous{
+        transform: rotateY(0);
+    }
+}

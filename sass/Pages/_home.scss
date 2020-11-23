@@ -12,7 +12,12 @@
     position: relative;
     background-size: cover;
     clip-path: ellipse(66% 34% at 51% 49%);
-    height: 95vh;
+    height: 100vh;
     padding: 18rem 0rem;
-    margin-top: -14rem;
+    margin-top: -18rem;
+}
+.section-courser{
+    background-color: $color-grey-light;
+    padding: 15rem 0rem 5rem;
+    margin-top: -20rem;
 }

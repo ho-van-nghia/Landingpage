@@ -7,10 +7,10 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15); 
 
     &__icon{
-        font-size: 6rem;
+        font-size: 4rem;
         margin-bottom: 1.5rem;
         display: inline-block;
-        background-image: rgba(to right, $color-primary-light, $color-primary-dark);
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
     }
@@ -18,4 +18,5 @@
         cursor: pointer;
         transform: translateY(-1.3rem) scale(1.03);
     }
+    transition: all .2s;
 }
