@@ -1,0 +1,10 @@
+#1. Lệnh cài npm
+npm init
+#2. Lệnh cài package.json
+npm install node-sass --save hoặc npm install --save-dev node-sass
+#3. Lệnh gỡ package.json
+npm uninstall node-sass
+#4. Chuyển đổi scss sang css trong package.json:
+"scripts": {
+    "sasstocss": "node-sass sass/main.scss css/style.css -w"
+  }
