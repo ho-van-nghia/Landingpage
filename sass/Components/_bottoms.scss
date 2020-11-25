@@ -17,6 +17,13 @@
             background-color: $color-white;
         }
     }
+    &--blue{
+        color:$color-white;
+        background-color: $color-primary;
+        &::after{
+            background-color: $color-primary;
+        }
+    }
     &:hover{
         transform: translateY(-3px);
         box-shadow: 0 5px 20px rgba($color-black, 0.2);
