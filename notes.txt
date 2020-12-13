@@ -1,3 +1,4 @@
+//============= SETTING SASS ===================
 #1. Lệnh cài npm
 npm init
 #2. Lệnh cài package.json
