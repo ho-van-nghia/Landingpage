@@ -1,5 +1,15 @@
 html{
-	font-size: 10px;
+	font-size: 62.5%;
+
+	@include respon(tab_land){
+		font-size: 56.25%;
+	}
+	@include respon(tab_port){
+		font-size: 50%;
+	}
+	@include respon(big_desktop){
+		font-size: 75%;
+	}
 }
 *,
 *::before,
@@ -14,4 +24,9 @@ img{
 }
 body{
 	box-sizing: border-box;
+	padding: 3rem;
+
+	@include respon(tab_port){
+		padding: 0rem;
+	}
 }

@@ -4,8 +4,15 @@
     margin: 0px auto;
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
+        @include respon(tab_port){
+            margin-bottom: $gutter-vertical-small;
+        }
     }
     @include clearfix;
+    @include respon(tab_port){
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
     [class ^= 'col-']{
         float: left;
         &:not(:last-child){

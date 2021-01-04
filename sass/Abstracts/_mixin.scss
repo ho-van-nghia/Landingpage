@@ -19,3 +19,18 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 }
+
+@mixin respon($breakpoint){
+    @if $breakpoint == phone {
+        @media (max-width: 600px){@content};
+    }
+    @if $breakpoint == tab_port {
+        @media (max-width: 900px){@content};
+    }
+    @if $breakpoint == tab_land {
+        @media (max-width: 1200px){@content};
+    }
+    @if $breakpoint == big_desktop {
+        @media (min-width: 1800px){@content};
+    }
+}

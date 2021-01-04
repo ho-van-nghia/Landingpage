@@ -20,6 +20,11 @@ body{
         font-size: 6.2rem;
         letter-spacing: 1.5rem;
         animation: moveInLeft 1s ease-out;
+
+        @include respon(phone){
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     }
     &--sub{
         display: block;
@@ -36,9 +41,13 @@ body{
     display: inline-block;
     letter-spacing: 2rem;
     cursor: pointer;
-
     transition: all 0.2s;
-
+    @include respon(tab_port){
+        font-size: 3rem;
+    }
+    @include respon(phone){
+        font-size: 2.5rem;
+    }
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     color: transparent; //Bắt buộc phải tồn tại vì bg-clip kh đk ổ trợ trên chorme,  fifoxld
     -webkit-background-clip: text; //Cắt bg

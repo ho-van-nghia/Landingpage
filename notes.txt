@@ -9,3 +9,7 @@ npm uninstall node-sass
 "scripts": {
     "sasstocss": "node-sass sass/main.scss css/style.css -w"
   }
+
+//============= RESPONSIVE ===================
+#1. Xử lý phần base.
+#2. Xử lý phần typography.
